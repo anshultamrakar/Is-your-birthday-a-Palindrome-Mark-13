@@ -3,18 +3,11 @@ return str.split("").reverse("").join("");
 
 }
 
-console.log(reverseString("Anshul"));
-
 
 function isPalindrome(str){
     var reverse = reverseString(str);
     return str === reverse;
 }
-
-console.log(isPalindrome("oppo"));
-console.log(isPalindrome("level"));
-console.log(isPalindrome("racecar"));
-
 
 
 function getDateAsString(date){
@@ -38,12 +31,11 @@ function getDateAsString(date){
     return dateInStr;
   }
   
-  var date = {day: 5, month: 2, year: 2020};
-  
-  console.log(getDateAsString(date));
 
 
   function getDateInAllFormats(date){
+
+    var dateStr = getDateAsString(date)
     var ddmmyyyy = date.day + date.month + date.year;
     var mmddyyyy = date.month + date.day + date.year;
     var yyyymmdd = date.year + date.month + date.day;
@@ -54,56 +46,13 @@ function getDateAsString(date){
     return [ddmmyyyy, mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yyddmm];
   }
   
+
   var date = {
-    day: 20,
-    month: 6,
-    year: 2020
-  }
-  
-  console.log(getDateAsString(date));
+    day : 2,
+    month : 11,
+    year : 2020 
+  };
+
+  console.log(getDateInAllFormats(date))
 
   
-  
-  function checkPalindromeForAllDateFormats(date) {
-    var dateFormatList = getDateInAllFormats(date);
-    var palindromeList = [];
-  
-    for (var i = 0; i < dateFormatList.length; i++) {
-      var result = isPalindrome(dateFormatList[i]);
-      palindromeList.push(result);
-    }
-    return palindromeList;
-  }
-  
-  var date = {
-    day: 11,
-    month: 2,
-    year: 2020
-  }
-  
-  var dateStr = getDateAsString(date);
-  
-  console.log(checkPalindromeForAllDateFormats(dateStr));
-
-  
-function isLeapYear(year){
-  if(year % 400 === 0){
-    return true;
-  if(year % 100 === 0){
-  return false ;
-  if(year % 4 === 0 ){
-    return false ;
-  }
-}
-isLeapYear(2020)
-
-
-function getNextDate(){
-  var day = date.day + 1 ;
-  var month = date.month;
-  var year = date.year ;
-
-  var dayInMonth = [31,28,31,30,31,30,31,31,30,31,30,31];
-}
-
-
