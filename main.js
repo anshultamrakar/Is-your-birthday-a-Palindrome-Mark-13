@@ -86,6 +86,24 @@ function getDateAsString(date){
   console.log(checkPalindromeForAllDateFormats(dateStr));
 
   
+function isLeapYear(year){
+  if(year % 400 === 0){
+    return true;
+  if(year % 100 === 0){
+  return false ;
+  if(year % 4 === 0 ){
+    return false ;
+  }
+}
+isLeapYear(2020)
 
+
+function getNextDate(){
+  var day = date.day + 1 ;
+  var month = date.month;
+  var year = date.year ;
+
+  var dayInMonth = [31,28,31,30,31,30,31,31,30,31,30,31];
+}
 
 
