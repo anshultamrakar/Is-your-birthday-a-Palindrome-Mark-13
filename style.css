@@ -1,9 +1,26 @@
-*{
+body {
     margin: 0;
-    padding: 0;
+    padding: 1rem;
     box-sizing: border-box;
-}
-
+    height: 100vh;
+    background-color: tan;
+    color: #333;
+    font-weight: bolder;
+  }
+  
+  main {
+    border: 1px solid white;
+    text-align: center;
+    height: 100%;
+  }
+  
+  p {
+    padding: 1.5rem;
+    text-align: left;
+    font-size: large;
+    text-align: center;
+  }
+  
 
 
 
